@@ -20,11 +20,11 @@
       }
     },
     {
-      "type": "Gallery",
-      "id": "gallery",
+      "type": "ProductShowcase",
+      "id": "products",
       "config": {
-        "heading": "The Vibes",
-        "subtitle": "Peep the collection"
+        "heading": "The Menu",
+        "subtitle": "Check the selection, mon"
       }
     },
     {

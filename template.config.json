@@ -14,7 +14,7 @@
     "Wavy section dividers",
     "Spring-based animations with bounce effects",
     "Floating leaf animations",
-    "Rich 8-section layout with gallery and blog",
+    "Rich 8-section layout with product showcase and blog",
     "Full multi-column footer with island vibes"
   ],
   "previewUrl": "/templates/highman/hero-beach-rasta.png",
@@ -32,7 +32,7 @@
     "HeroFullScreen",
     "Testimonials",
     "About",
-    "Gallery",
+    "ProductShowcase",
     "Stats",
     "FAQ",
     "BlogFeed",
