@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Nunito:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== HighMan Template Styles ===== */
+/* Rasta / Reggae Cartoon Vibes — warm gold, island green, red accents */
+
+:root {
+  --tenant-color-primary: 48 90% 55%;
+  --tenant-color-secondary: 140 65% 38%;
+  --tenant-color-accent: 0 72% 50%;
+  --tenant-color-background: 45 50% 96%;
+  --tenant-color-surface: 45 40% 99%;
+  --tenant-color-text: 35 30% 15%;
+  --tenant-color-heading: 35 40% 8%;
+  --tenant-color-border: 42 25% 85%;
+  --tenant-font-base: 'Nunito', sans-serif;
+  --tenant-font-heading: 'Outfit', sans-serif;
+}
+
+.template-highman {
+  font-family: var(--tenant-font-base);
+  background-color: hsl(var(--tenant-color-background));
+  color: hsl(var(--tenant-color-text));
+}
+
+.template-highman h1,
+.template-highman h2,
+.template-highman h3,
+.template-highman h4 {
+  font-family: var(--tenant-font-heading);
+  color: hsl(var(--tenant-color-heading));
+}
+
+/* ===== Buttons ===== */
+.template-highman .btn-primary {
+  background-color: hsl(var(--tenant-color-primary));
+  color: hsl(var(--tenant-color-heading));
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-family: var(--tenant-font-heading);
+  letter-spacing: 0.025em;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 4px 4px 0px hsl(var(--tenant-color-heading) / 0.2);
+  border: 3px solid hsl(var(--tenant-color-heading) / 0.15);
+}
+
+.template-highman .btn-primary:hover {
+  transform: translateY(-2px) rotate(-1deg);
+  box-shadow: 6px 6px 0px hsl(var(--tenant-color-heading) / 0.25);
+}
+
+.template-highman .btn-primary:active {
+  transform: translateY(1px);
+  box-shadow: 2px 2px 0px hsl(var(--tenant-color-heading) / 0.2);
+}
+
+/* ===== Section Spacing (Mobile-First) ===== */
+.template-highman .section-padding {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  .template-highman .section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .template-highman .section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+/* ===== Rasta Stripe Accent ===== */
+.template-highman .rasta-stripe {
+  height: 6px;
+  background: linear-gradient(
+    to right,
+    hsl(var(--tenant-color-accent)) 0%,
+    hsl(var(--tenant-color-accent)) 33%,
+    hsl(var(--tenant-color-primary)) 33%,
+    hsl(var(--tenant-color-primary)) 66%,
+    hsl(var(--tenant-color-secondary)) 66%,
+    hsl(var(--tenant-color-secondary)) 100%
+  );
+  border-radius: 9999px;
+}
+
+/* ===== Card Styles — Cartoon / Hand-drawn feel ===== */
+.template-highman .card-rasta {
+  background-color: hsl(var(--tenant-color-surface));
+  border: 3px solid hsl(var(--tenant-color-border));
+  border-radius: 1rem;
+  box-shadow: 5px 5px 0px hsl(var(--tenant-color-heading) / 0.08);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.template-highman .card-rasta:hover {
+  transform: translateY(-4px) rotate(-0.5deg);
+  box-shadow: 8px 8px 0px hsl(var(--tenant-color-primary) / 0.2);
+  border-color: hsl(var(--tenant-color-primary));
+}
+
+/* ===== Wavy Section Divider ===== */
+.template-highman .wave-divider {
+  position: relative;
+  overflow: hidden;
+}
+
+.template-highman .wave-divider::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='%23f5f0e8'/%3E%3C/svg%3E") no-repeat bottom;
+  background-size: cover;
+}
+
+/* ===== Wobbly Border Utility ===== */
+.template-highman .wobbly-border {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+/* ===== Floating Leaf Animation ===== */
+@keyframes floatLeaf {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-10px) rotate(5deg); }
+  50% { transform: translateY(-5px) rotate(-3deg); }
+  75% { transform: translateY(-15px) rotate(3deg); }
+}
+
+.template-highman .float-leaf {
+  animation: floatLeaf 4s ease-in-out infinite;
+}
+
+/* ===== Cartoon Text Shadow ===== */
+.template-highman .text-cartoon {
+  text-shadow: 3px 3px 0px hsl(var(--tenant-color-heading) / 0.15);
+}
+
+/* ===== Gradient Overlays ===== */
+.template-highman .gradient-rasta {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--tenant-color-accent) / 0.85) 0%,
+    hsl(var(--tenant-color-primary) / 0.85) 50%,
+    hsl(var(--tenant-color-secondary) / 0.85) 100%
+  );
+}
+
+.template-highman .gradient-warm {
+  background: linear-gradient(
+    180deg,
+    hsl(var(--tenant-color-primary) / 0.15) 0%,
+    hsl(var(--tenant-color-background)) 100%
+  );
+}
+
+/* ===== Diagonal Section Tilt ===== */
+.template-highman .section-tilt {
+  position: relative;
+  z-index: 1;
+}
+
+.template-highman .section-tilt::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: inherit;
+  transform: skewY(-2deg);
+  z-index: -1;
+}
+
+/* ===== Rasta Glow Utility ===== */
+.template-highman .glow-gold {
+  box-shadow: 0 0 20px hsl(var(--tenant-color-primary) / 0.3),
+              0 0 40px hsl(var(--tenant-color-primary) / 0.15);
+}
+
+.template-highman .glow-green {
+  box-shadow: 0 0 20px hsl(var(--tenant-color-secondary) / 0.3),
+              0 0 40px hsl(var(--tenant-color-secondary) / 0.15);
+}
+
+.template-highman .glow-red {
+  box-shadow: 0 0 20px hsl(var(--tenant-color-accent) / 0.3),
+              0 0 40px hsl(var(--tenant-color-accent) / 0.15);
+}
+
+/* ===== Scrollbar ===== */
+.template-highman ::-webkit-scrollbar {
+  width: 10px;
+}
+
+.template-highman ::-webkit-scrollbar-track {
+  background: hsl(var(--tenant-color-background));
+}
+
+.template-highman ::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    hsl(var(--tenant-color-accent)),
+    hsl(var(--tenant-color-primary)),
+    hsl(var(--tenant-color-secondary))
+  );
+  border-radius: 9999px;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+  0% { opacity: 0; transform: scale(0.3); }
+  50% { transform: scale(1.05); }
+  70% { transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes wobble {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  75% { transform: rotate(-2deg); }
+}
+
+.template-highman .animate-wobble {
+  animation: wobble 3s ease-in-out infinite;
+}

@@ -1,0 +1,48 @@
+{
+  "id": "highman",
+  "slug": "highman",
+  "name": "HighMan",
+  "description": "A playful, Rasta-inspired cartoon template bursting with island energy. Bold red, gold, and green palette with rounded typography, wobbly borders, and reggae vibes for the 18-30 stoner crowd.",
+  "version": "1.0.0",
+  "author": "BudStack Platform",
+  "category": "modern",
+  "tags": ["playful", "rasta", "reggae", "cartoon", "island", "tropical", "stoner", "vibrant", "fun"],
+  "features": [
+    "Immersive fullscreen hero with Rasta gradient overlay",
+    "Cartoon-style card shadows and wobbly borders",
+    "Rasta red/gold/green stripe accents",
+    "Wavy section dividers",
+    "Spring-based animations with bounce effects",
+    "Floating leaf animations",
+    "Rich 8-section layout with gallery and blog",
+    "Full multi-column footer with island vibes"
+  ],
+  "previewUrl": "/templates/highman/hero-beach-rasta.png",
+  "thumbnailUrl": "/templates/highman/highman-characters.png",
+  "screenshots": [
+    "/templates/highman/hero-beach-rasta.png",
+    "/templates/highman/highman-characters.png",
+    "/templates/highman/exotic-wave-flavors.png"
+  ],
+  "demoUrl": null,
+  "price": 0,
+  "isPremium": false,
+  "isActive": true,
+  "sections": [
+    "HeroFullScreen",
+    "Testimonials",
+    "About",
+    "Gallery",
+    "Stats",
+    "FAQ",
+    "BlogFeed",
+    "CTASplit"
+  ],
+  "navigation": "NavTransparent",
+  "footer": "FooterFull",
+  "customization": {
+    "colors": { "primary": "#EABA29", "secondary": "#2E8B4A", "accent": "#DA2424" },
+    "fonts": { "base": "'Nunito', sans-serif", "heading": "'Outfit', sans-serif" }
+  },
+  "accessibility": { "wcag_level": "AA", "screen_reader_tested": true }
+}

@@ -1,0 +1,60 @@
+{
+  "version": "1.0.0",
+  "navigation": "NavTransparent",
+  "sections": [
+    { "type": "HeroFullScreen", "id": "hero" },
+    {
+      "type": "Testimonials",
+      "id": "testimonials",
+      "config": {
+        "heading": "What the People Say",
+        "subtitle": "Real talk from real ones"
+      }
+    },
+    {
+      "type": "About",
+      "id": "about",
+      "config": {
+        "heading": "Our Roots",
+        "content": "Born from island culture and a love for the herb. We keep it real, we keep it irie, and we keep it moving."
+      }
+    },
+    {
+      "type": "Gallery",
+      "id": "gallery",
+      "config": {
+        "heading": "The Vibes",
+        "subtitle": "Peep the collection"
+      }
+    },
+    {
+      "type": "Stats",
+      "id": "stats",
+      "config": {
+        "heading": "By the Numbers"
+      }
+    },
+    {
+      "type": "FAQ",
+      "id": "faq",
+      "config": {
+        "heading": "Got Questions?",
+        "subtitle": "We got answers, mon"
+      }
+    },
+    {
+      "type": "BlogFeed",
+      "id": "blog",
+      "config": {
+        "heading": "From the Bush",
+        "subtitle": "Stories, tips, and island wisdom"
+      }
+    },
+    { "type": "CTASplit", "id": "cta" }
+  ],
+  "footer": "FooterFull",
+  "settings": {
+    "wrapperClass": "template-highman",
+    "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Nunito:wght@400;600;700&display=swap"
+  }
+}

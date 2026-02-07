@@ -1,0 +1,207 @@
+{
+  "template": "highman",
+  "slug": "highman",
+  "logoPath": null,
+  "heroImagePath": "/templates/highman/hero-beach-rasta.png",
+  "heroVideoPath": null,
+  "primaryColor": "48 90% 55%",
+  "fontFamily": "'Nunito', sans-serif",
+  "designSystem": {
+    "colors": {
+      "rasta-gold": {
+        "50": "48 100% 97%",
+        "100": "48 100% 92%",
+        "200": "48 95% 82%",
+        "300": "48 92% 72%",
+        "400": "48 90% 63%",
+        "500": "48 90% 55%",
+        "600": "48 85% 46%",
+        "700": "48 80% 38%",
+        "800": "48 75% 30%",
+        "900": "48 70% 22%"
+      },
+      "rasta-green": {
+        "50": "140 70% 97%",
+        "100": "140 68% 90%",
+        "200": "140 65% 78%",
+        "300": "140 63% 62%",
+        "400": "140 65% 48%",
+        "500": "140 65% 38%",
+        "600": "140 62% 30%",
+        "700": "140 60% 24%",
+        "800": "140 58% 18%",
+        "900": "140 55% 12%"
+      },
+      "rasta-red": {
+        "50": "0 85% 97%",
+        "100": "0 80% 92%",
+        "200": "0 78% 82%",
+        "300": "0 75% 72%",
+        "400": "0 74% 60%",
+        "500": "0 72% 50%",
+        "600": "0 70% 42%",
+        "700": "0 68% 34%",
+        "800": "0 65% 26%",
+        "900": "0 60% 18%"
+      },
+      "primary": "48 90% 55%",
+      "secondary": "140 65% 38%",
+      "accent": "0 72% 50%",
+      "background": "45 50% 96%",
+      "surface": "45 40% 99%",
+      "text": "35 30% 15%",
+      "heading": "35 40% 8%",
+      "border": "42 25% 85%",
+      "success": "140 65% 38%",
+      "warning": "48 90% 55%",
+      "error": "0 72% 50%",
+      "info": "200 75% 50%"
+    },
+    "typography": {
+      "fontFamily": {
+        "base": "'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+        "heading": "'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+        "mono": "'Roboto Mono', 'Courier New', monospace"
+      },
+      "fontSize": {
+        "xs": "0.75rem",
+        "sm": "0.875rem",
+        "base": "1rem",
+        "lg": "1.125rem",
+        "xl": "1.25rem",
+        "2xl": "1.5rem",
+        "3xl": "1.875rem",
+        "4xl": "2.25rem",
+        "5xl": "3rem",
+        "6xl": "3.75rem",
+        "7xl": "4.5rem",
+        "8xl": "6rem"
+      },
+      "lineHeight": {
+        "tight": "1.25",
+        "snug": "1.375",
+        "normal": "1.5",
+        "relaxed": "1.625",
+        "loose": "2"
+      },
+      "letterSpacing": {
+        "tighter": "-0.05em",
+        "tight": "-0.025em",
+        "normal": "0",
+        "wide": "0.025em",
+        "wider": "0.05em",
+        "widest": "0.1em"
+      },
+      "fontWeight": {
+        "normal": "400",
+        "medium": "500",
+        "semibold": "600",
+        "bold": "700",
+        "extrabold": "800"
+      }
+    },
+    "shadows": {
+      "theme-sm": "4px 4px 0px rgba(58, 46, 14, 0.08)",
+      "theme-md": "5px 5px 0px rgba(58, 46, 14, 0.12)",
+      "theme-lg": "8px 8px 0px rgba(58, 46, 14, 0.16)",
+      "theme-xl": "10px 10px 0px rgba(58, 46, 14, 0.20)",
+      "theme-2xl": "14px 14px 0px rgba(58, 46, 14, 0.24)",
+      "cartoon-sm": "3px 3px 0px rgba(58, 46, 14, 0.15)",
+      "cartoon-md": "5px 5px 0px rgba(58, 46, 14, 0.20)",
+      "cartoon-lg": "8px 8px 0px rgba(58, 46, 14, 0.25)"
+    },
+    "gradients": {
+      "primary": "linear-gradient(135deg, hsl(48 90% 55%) 0%, hsl(48 85% 46%) 100%)",
+      "secondary": "linear-gradient(135deg, hsl(140 65% 38%) 0%, hsl(140 60% 24%) 100%)",
+      "rasta-flow": "linear-gradient(135deg, hsl(0 72% 50%) 0%, hsl(48 90% 55%) 50%, hsl(140 65% 38%) 100%)",
+      "hero-overlay": "linear-gradient(180deg, rgba(58, 46, 14, 0.3) 0%, rgba(234, 186, 41, 0.6) 50%, rgba(58, 46, 14, 0.85) 100%)",
+      "card-hover": "linear-gradient(135deg, rgba(234, 186, 41, 0.1) 0%, rgba(46, 139, 74, 0.05) 100%)"
+    },
+    "spacing": {
+      "section": "5rem",
+      "container": "1.5rem",
+      "card": "1.5rem"
+    },
+    "borderRadius": {
+      "none": "0",
+      "sm": "0.25rem",
+      "md": "0.5rem",
+      "lg": "0.75rem",
+      "xl": "1rem",
+      "2xl": "1.5rem",
+      "full": "9999px"
+    }
+  },
+  "valueProps": [
+    {
+      "title": "Island-Grown Quality",
+      "description": "Every bud handpicked and lab-tested for the smoothest ride. Pure vibes, zero compromise.",
+      "icon": "Star"
+    },
+    {
+      "title": "Roots & Culture",
+      "description": "Sourced from growers who share the love — organic, sustainable, and full of good energy.",
+      "icon": "Heart"
+    },
+    {
+      "title": "Irie Delivery",
+      "description": "Fast, discreet, and always on time. Your herb arrives ready to light up the session.",
+      "icon": "Zap"
+    },
+    {
+      "title": "Good Vibes Guaranteed",
+      "description": "Not feeling it? We make it right, every time. Your satisfaction is our mission, mon.",
+      "icon": "Shield"
+    }
+  ],
+  "pageContent": {
+    "homeHeroTitle": "Ride the Vibe, Feel the Flow",
+    "homeHeroSubtitle": "Island-Grown Goodness, Delivered",
+    "homeHeroDescription": "Chill out with premium herb, handpicked for the real ones. From consultation to your doorstep — we keep it irie, we keep it real.",
+    "aboutMission": "Born from the roots of island culture and a deep love for the herb. No corporate vibes here — just real people, real bud, and real good times. One love, one mission: bring the best to your door."
+  },
+  "navigation": {
+    "links": [
+      { "label": "Products", "href": "/products" },
+      { "label": "About", "href": "#about" },
+      { "label": "Gallery", "href": "#gallery" },
+      { "label": "Blog", "href": "#blog" },
+      { "label": "FAQ", "href": "#faq" },
+      { "label": "Contact", "href": "/contact" }
+    ],
+    "cta": {
+      "label": "Blaze Up",
+      "href": "/consultation"
+    }
+  },
+  "footer": {
+    "copyright": "\u00a9 {year} {businessName}. All rights reserved. One love.",
+    "disclaimer": "Cannabis should only be used under the guidance of a licensed healthcare professional. Must be of legal age in your jurisdiction. This product is not intended to diagnose, treat, cure, or prevent any disease.",
+    "sections": [
+      {
+        "title": "Shop",
+        "links": [
+          { "label": "All Products", "href": "/products" },
+          { "label": "Top Picks", "href": "/products?filter=popular" },
+          { "label": "New Drops", "href": "/products?filter=new" }
+        ]
+      },
+      {
+        "title": "Vibes",
+        "links": [
+          { "label": "Our Roots", "href": "#about" },
+          { "label": "The Blog", "href": "#blog" },
+          { "label": "Gallery", "href": "#gallery" }
+        ]
+      },
+      {
+        "title": "Legal",
+        "links": [
+          { "label": "Privacy Policy", "href": "/privacy" },
+          { "label": "Terms of Service", "href": "/terms" },
+          { "label": "Compliance", "href": "/regulatory" }
+        ]
+      }
+    ]
+  }
+}
