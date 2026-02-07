@@ -218,6 +218,69 @@
   border-radius: 9999px;
 }
 
+/* ==========================================================
+   LIGHT THEME + COMPONENT OVERRIDES (CRITICAL)
+   Pre-built components (NavTransparent, HeroFullScreen,
+   FooterFull) assume dark backgrounds with white text.
+   Light-themed templates MUST override these.
+   ========================================================== */
+
+/* ===== Hero: Dark overlay for white text legibility ===== */
+/* HeroFullScreen renders white text — needs a dark backdrop.
+   This pseudo-element adds a rich Rasta green-to-dark overlay
+   above the gradient bg (z-0,z-1,z-2) but below content (z-10). */
+.template-highman section:first-of-type::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  background: linear-gradient(180deg,
+    hsl(var(--tenant-color-secondary) / 0.55) 0%,
+    hsl(var(--tenant-color-heading) / 0.7) 60%,
+    hsl(var(--tenant-color-heading) / 0.88) 100%);
+  pointer-events: none;
+}
+
+/* ===== NavTransparent: force dark text when scrolled on light bg ===== */
+/* When NOT scrolled: white text works now because hero overlay is dark.
+   When scrolled: component already uses heading/text colors — correct.
+   CTA button on scroll: uses primary bg with white text — force dark text
+   since our primary (gold) is light. */
+.template-highman nav a[style*="rounded-full"][style*="background"] {
+  color: hsl(var(--tenant-color-heading)) !important;
+}
+
+/* ===== FooterFull: force dark background + white text ===== */
+/* FooterFull uses --tenant-color-heading as bg with white text.
+   Ensure this stays dark even if TenantThemeProvider overrides vars. */
+.template-highman footer {
+  background-color: hsl(var(--tenant-color-heading, 35 40% 8%)) !important;
+  color: white !important;
+}
+
+.template-highman footer span,
+.template-highman footer p {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.template-highman footer h4 {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-family: var(--tenant-font-heading) !important;
+}
+
+.template-highman footer a {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.template-highman footer a:hover {
+  color: white !important;
+}
+
+/* Footer bottom bar */
+.template-highman footer [style*="border-top"] {
+  border-top-color: rgba(255, 255, 255, 0.1) !important;
+}
+
 /* ===== Animations ===== */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
