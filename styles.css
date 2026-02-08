@@ -227,25 +227,14 @@
 
 /* ===== Hero: Override built-in overlay for light themes ===== */
 /* HeroFullScreen's built-in z-[1] overlay uses --tenant-color-background
-   at 0.95 opacity — which is nearly opaque cream on light themes, hiding
-   the hero image. Override it with dark Rasta colors so the image shows. */
+   at 0.95 opacity — nearly opaque cream on light themes. Override with
+   a light-to-dark gradient: image visible at top, text readable at bottom. */
 .template-highman section:first-of-type > .z-\[1\] {
   background: linear-gradient(180deg,
-    hsl(var(--tenant-color-secondary) / 0.35) 0%,
-    hsl(var(--tenant-color-heading) / 0.65) 100%) !important;
-}
-
-/* Subtle additional overlay for extra text contrast at bottom */
-.template-highman section:first-of-type::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 5;
-  background: linear-gradient(180deg,
-    transparent 0%,
-    hsl(var(--tenant-color-heading) / 0.2) 60%,
-    hsl(var(--tenant-color-heading) / 0.4) 100%);
-  pointer-events: none;
+    hsl(var(--tenant-color-heading) / 0.05) 0%,
+    hsl(var(--tenant-color-heading) / 0.1) 35%,
+    hsl(var(--tenant-color-heading) / 0.5) 70%,
+    hsl(var(--tenant-color-heading) / 0.7) 100%) !important;
 }
 
 /* ===== NavTransparent: force dark text when scrolled on light bg ===== */
