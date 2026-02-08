@@ -16,7 +16,8 @@
       "id": "about",
       "config": {
         "heading": "Our Roots",
-        "content": "Born from island culture and a love for the herb. We keep it real, we keep it irie, and we keep it moving."
+        "content": "Born from island culture and a love for the herb. We keep it real, we keep it irie, and we keep it moving.",
+        "imageUrl": "hero-beach-rasta.png"
       }
     },
     {
@@ -50,7 +51,13 @@
         "subtitle": "Stories, tips, and island wisdom"
       }
     },
-    { "type": "CTASplit", "id": "cta" }
+    {
+      "type": "CTASplit",
+      "id": "cta",
+      "config": {
+        "imageUrl": "exotic-wave-flavors.png"
+      }
+    }
   ],
   "footer": "FooterFull",
   "settings": {
