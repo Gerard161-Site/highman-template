@@ -225,19 +225,26 @@
    Light-themed templates MUST override these.
    ========================================================== */
 
-/* ===== Hero: Dark overlay for white text legibility ===== */
-/* HeroFullScreen renders white text — needs a dark backdrop.
-   This pseudo-element adds a rich Rasta green-to-dark overlay
-   above the gradient bg (z-0,z-1,z-2) but below content (z-10). */
+/* ===== Hero: Override built-in overlay for light themes ===== */
+/* HeroFullScreen's built-in z-[1] overlay uses --tenant-color-background
+   at 0.95 opacity — which is nearly opaque cream on light themes, hiding
+   the hero image. Override it with dark Rasta colors so the image shows. */
+.template-highman section:first-of-type > .z-\[1\] {
+  background: linear-gradient(180deg,
+    hsl(var(--tenant-color-secondary) / 0.35) 0%,
+    hsl(var(--tenant-color-heading) / 0.65) 100%) !important;
+}
+
+/* Subtle additional overlay for extra text contrast at bottom */
 .template-highman section:first-of-type::after {
   content: '';
   position: absolute;
   inset: 0;
   z-index: 5;
   background: linear-gradient(180deg,
-    hsl(var(--tenant-color-secondary) / 0.55) 0%,
-    hsl(var(--tenant-color-heading) / 0.7) 60%,
-    hsl(var(--tenant-color-heading) / 0.88) 100%);
+    transparent 0%,
+    hsl(var(--tenant-color-heading) / 0.2) 60%,
+    hsl(var(--tenant-color-heading) / 0.4) 100%);
   pointer-events: none;
 }
 
