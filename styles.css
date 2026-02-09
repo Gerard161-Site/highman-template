@@ -58,24 +58,50 @@
   box-shadow: 2px 2px 0px hsl(var(--tenant-color-heading) / 0.2);
 }
 
-/* ===== Section Spacing (Mobile-First) ===== */
-.template-highman .section-padding {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+/* ===== Section Spacing (CRITICAL — Mobile-First) ===== */
+/* Pre-built components hardcode py-20 (80px top+bottom = 160px between sections).
+   On light backgrounds that creates ~2in visible gaps. Override aggressively. */
+
+/* Target the Tailwind class directly + any nested section */
+.template-highman .py-20,
+.template-highman .py-24,
+.template-highman .py-16 {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
 }
 
 @media (min-width: 640px) {
-  .template-highman .section-padding {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+  .template-highman .py-20,
+  .template-highman .py-24,
+  .template-highman .py-16 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
   }
 }
 
 @media (min-width: 768px) {
-  .template-highman .section-padding {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+  .template-highman .py-20,
+  .template-highman .py-24,
+  .template-highman .py-16 {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
   }
+}
+
+/* ===== Hero Layout ===== */
+/* With NavFull (sticky), hero starts below nav — no overlap.
+   Push content to bottom third so character art shows above. */
+.template-highman #hero > section {
+  align-items: flex-end !important;
+}
+
+.template-highman #hero .z-\[10\] {
+  padding-bottom: 5rem;
+}
+
+/* Show top of hero image (characters) instead of center-crop */
+.template-highman #hero img {
+  object-position: top center !important;
 }
 
 /* ===== Rasta Stripe Accent ===== */
@@ -228,23 +254,21 @@
 /* ===== Hero: Override built-in overlay for light themes ===== */
 /* HeroFullScreen's built-in z-[1] overlay uses --tenant-color-background
    at 0.95 opacity — nearly opaque cream on light themes. Override with
-   a light-to-dark gradient: image visible at top, text readable at bottom. */
-.template-highman section:first-of-type > .z-\[1\] {
+   a subtle gradient: image visible at top, text readable at bottom. */
+.template-highman #hero .z-\[1\] {
   background: linear-gradient(180deg,
     hsl(var(--tenant-color-heading) / 0.05) 0%,
-    hsl(var(--tenant-color-heading) / 0.1) 35%,
-    hsl(var(--tenant-color-heading) / 0.5) 70%,
-    hsl(var(--tenant-color-heading) / 0.7) 100%) !important;
+    hsl(var(--tenant-color-heading) / 0.15) 40%,
+    hsl(var(--tenant-color-heading) / 0.55) 75%,
+    hsl(var(--tenant-color-heading) / 0.75) 100%) !important;
 }
 
-/* ===== NavTransparent: force dark text when scrolled on light bg ===== */
-/* When NOT scrolled: white text works now because hero overlay is dark.
-   When scrolled: component already uses heading/text colors — correct.
-   CTA button on scroll: uses primary bg with white text — force dark text
-   since our primary (gold) is light. */
-.template-highman nav a[style*="rounded-full"][style*="background"] {
+/* NavFull CTA button — gold bg needs dark text, not white */
+.template-highman nav a[style*="background"] {
   color: hsl(var(--tenant-color-heading)) !important;
 }
+
+/* NavFull uses CSS variables natively — no overrides needed */
 
 /* ===== FooterFull: force dark background + white text ===== */
 /* FooterFull uses --tenant-color-heading as bg with white text.

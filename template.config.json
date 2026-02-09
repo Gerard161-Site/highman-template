@@ -38,7 +38,7 @@
     "BlogFeed",
     "CTASplit"
   ],
-  "navigation": "NavTransparent",
+  "navigation": "NavFull",
   "footer": "FooterFull",
   "customization": {
     "colors": { "primary": "#EABA29", "secondary": "#2E8B4A", "accent": "#DA2424" },
