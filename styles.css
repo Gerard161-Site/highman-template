@@ -58,46 +58,9 @@
   box-shadow: 2px 2px 0px hsl(var(--tenant-color-heading) / 0.2);
 }
 
-/* ===== Section Spacing (CRITICAL — Mobile-First) ===== */
-/* Pre-built components hardcode py-20 (80px top+bottom = 160px gaps).
-   Use section IDs from layout.json for maximum specificity. */
-
-#testimonials > section,
-#about > section,
-#products > section,
-#stats > section,
-#faq > section,
-#blog > section,
-#cta > section {
-  padding-top: 2rem !important;
-  padding-bottom: 2rem !important;
-}
-
-@media (min-width: 640px) {
-  #testimonials > section,
-  #about > section,
-  #products > section,
-  #stats > section,
-  #faq > section,
-  #blog > section,
-  #cta > section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
-}
-
-@media (min-width: 768px) {
-  #testimonials > section,
-  #about > section,
-  #products > section,
-  #stats > section,
-  #faq > section,
-  #blog > section,
-  #cta > section {
-    padding-top: 3.5rem !important;
-    padding-bottom: 3.5rem !important;
-  }
-}
+/* ===== Section Spacing ===== */
+/* Base padding is now py-8 sm:py-10 in pre-built components.
+   Only override here if you want even tighter spacing for this template. */
 
 /* ===== Hero Layout ===== */
 /* Push content to bottom third so character art is visible above */
