@@ -2,7 +2,10 @@
   "version": "1.0.0",
   "navigation": "NavFull",
   "sections": [
-    { "type": "HeroFullScreen", "id": "hero" },
+    {
+      "type": "HeroFullScreen",
+      "id": "hero"
+    },
     {
       "type": "Testimonials",
       "id": "testimonials",
@@ -17,7 +20,7 @@
       "config": {
         "heading": "Our Roots",
         "content": "Born from island culture and a love for the herb. We keep it real, we keep it irie, and we keep it moving.",
-        "imageUrl": "hero-beach-rasta.png"
+        "imageUrl": "assets/hero-beach-rasta.png"
       }
     },
     {
@@ -55,7 +58,7 @@
       "type": "CTASplit",
       "id": "cta",
       "config": {
-        "imageUrl": "exotic-wave-flavors.png"
+        "imageUrl": "assets/exotic-wave-flavors.png"
       }
     }
   ],
