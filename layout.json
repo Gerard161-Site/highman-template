@@ -4,14 +4,44 @@
   "sections": [
     {
       "type": "HeroFullScreen",
-      "id": "hero"
+      "id": "hero",
+      "config": {
+        "title": "Ride the Vibe, Feel the Flow",
+        "subtitle": "Island-Grown Goodness, Delivered",
+        "description": "Chill out with premium herb, handpicked for the real ones. From consultation to your doorstep — we keep it irie, we keep it real.",
+        "textAlign": "center",
+        "heroType": "gradient-image",
+        "ctaText": "Blaze Up",
+        "secondaryCtaText": "Check the Menu",
+        "secondaryCtaHref": "/products"
+      }
     },
     {
       "type": "Testimonials",
       "id": "testimonials",
       "config": {
         "heading": "What the People Say",
-        "subtitle": "Real talk from real ones"
+        "subtitle": "Real talk from real ones",
+        "items": [
+          {
+            "quote": "Best herb I've had in years. The delivery was fast and the quality is unmatched. One love!",
+            "author": "Marcus R.",
+            "role": "Regular Customer",
+            "rating": 5
+          },
+          {
+            "quote": "From the consultation to the delivery, everything was smooth. These guys keep it real.",
+            "author": "Jade T.",
+            "role": "New Customer",
+            "rating": 5
+          },
+          {
+            "quote": "Finally a dispensary that gets it. Good vibes, good bud, good people. Respect!",
+            "author": "Kwame J.",
+            "role": "Loyal Customer",
+            "rating": 5
+          }
+        ]
       }
     },
     {
@@ -19,8 +49,13 @@
       "id": "about",
       "config": {
         "heading": "Our Roots",
-        "content": "Born from island culture and a love for the herb. We keep it real, we keep it irie, and we keep it moving.",
-        "imageUrl": "assets/hero-beach-rasta.png"
+        "content": "Born from island culture and a love for the herb. We keep it real, we keep it irie, and we keep it moving. No corporate vibes — just real people, real bud, and real good times.",
+        "imageUrl": "assets/hero-beach-rasta.png",
+        "stats": [
+          { "value": "8K+", "label": "Happy Customers" },
+          { "value": "40+", "label": "Premium Strains" },
+          { "value": "4.9", "label": "Vibes Rating" }
+        ]
       }
     },
     {
@@ -28,14 +63,42 @@
       "id": "products",
       "config": {
         "heading": "The Menu",
-        "subtitle": "Check the selection, mon"
+        "subtitle": "Check the selection, mon",
+        "categories": [
+          {
+            "title": "Island Flower",
+            "description": "Hand-picked, sun-grown bud from the finest growers.",
+            "href": "/products?category=flower"
+          },
+          {
+            "title": "Oils & Drops",
+            "description": "Smooth, full-spectrum oils for the mellow vibe.",
+            "href": "/products?category=oils"
+          },
+          {
+            "title": "Edibles",
+            "description": "Tropical-infused treats that hit just right.",
+            "href": "/products?category=edibles"
+          },
+          {
+            "title": "Concentrates",
+            "description": "Pure power for the experienced herb lover.",
+            "href": "/products?category=concentrates"
+          }
+        ]
       }
     },
     {
       "type": "Stats",
       "id": "stats",
       "config": {
-        "heading": "By the Numbers"
+        "heading": "By the Numbers",
+        "items": [
+          { "value": "8000", "suffix": "+", "label": "Orders Shipped" },
+          { "value": "40", "suffix": "+", "label": "Strains Available" },
+          { "value": "99", "suffix": "%", "label": "Good Vibes" },
+          { "value": "24", "suffix": "/7", "label": "Irie Support" }
+        ]
       }
     },
     {
@@ -43,7 +106,29 @@
       "id": "faq",
       "config": {
         "heading": "Got Questions?",
-        "subtitle": "We got answers, mon"
+        "subtitle": "We got answers, mon",
+        "items": [
+          {
+            "question": "How do I get started?",
+            "answer": "Hit that 'Blaze Up' button, book a quick consultation, and you're golden. It's free and takes about 10 minutes."
+          },
+          {
+            "question": "Is this legal?",
+            "answer": "100% legit. We operate fully within cannabis regulations. All products prescribed by licensed healthcare professionals."
+          },
+          {
+            "question": "How fast is delivery?",
+            "answer": "We move quick, mon. Most orders ship same-day and arrive within 1-3 business days. Tracking included."
+          },
+          {
+            "question": "What if I'm not feeling it?",
+            "answer": "We make it right, every time. Reach out to our team and we'll sort you out. Good vibes guaranteed."
+          },
+          {
+            "question": "Can I choose my strain?",
+            "answer": "For sure! Browse the full menu, or let our specialists recommend the perfect match for your vibe."
+          }
+        ]
       }
     },
     {
@@ -58,6 +143,9 @@
       "type": "CTASplit",
       "id": "cta",
       "config": {
+        "heading": "Ready to Ride the Vibe?",
+        "subtitle": "Three easy steps to your prescription",
+        "ctaText": "Blaze Up — It's Free",
         "imageUrl": "assets/exotic-wave-flavors.png"
       }
     }

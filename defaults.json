@@ -8,7 +8,7 @@
   "fontFamily": "'Nunito', sans-serif",
   "designSystem": {
     "colors": {
-      "rasta-gold": {
+      "primary-scale": {
         "50": "48 100% 97%",
         "100": "48 100% 92%",
         "200": "48 95% 82%",
@@ -19,30 +19,6 @@
         "700": "48 80% 38%",
         "800": "48 75% 30%",
         "900": "48 70% 22%"
-      },
-      "rasta-green": {
-        "50": "140 70% 97%",
-        "100": "140 68% 90%",
-        "200": "140 65% 78%",
-        "300": "140 63% 62%",
-        "400": "140 65% 48%",
-        "500": "140 65% 38%",
-        "600": "140 62% 30%",
-        "700": "140 60% 24%",
-        "800": "140 58% 18%",
-        "900": "140 55% 12%"
-      },
-      "rasta-red": {
-        "50": "0 85% 97%",
-        "100": "0 80% 92%",
-        "200": "0 78% 82%",
-        "300": "0 75% 72%",
-        "400": "0 74% 60%",
-        "500": "0 72% 50%",
-        "600": "0 70% 42%",
-        "700": "0 68% 34%",
-        "800": "0 65% 26%",
-        "900": "0 60% 18%"
       },
       "primary": "48 90% 55%",
       "secondary": "140 65% 38%",
@@ -168,19 +144,15 @@
       },
       {
         "label": "About",
-        "href": "#about"
+        "href": "/about"
       },
       {
-        "label": "Products",
-        "href": "/products"
-      },
-      {
-        "label": "Blog",
-        "href": "#blog"
+        "label": "The Wire",
+        "href": "/the-wire"
       },
       {
         "label": "FAQ",
-        "href": "#faq"
+        "href": "/faq"
       },
       {
         "label": "Contact",
@@ -193,7 +165,7 @@
     }
   },
   "footer": {
-    "copyright": "\u00a9 {year} {businessName}. All rights reserved. One love.",
+    "tagline": "Ride the Vibe, Feel the Flow. One love.",
     "disclaimer": "Cannabis should only be used under the guidance of a licensed healthcare professional. Must be of legal age in your jurisdiction. This product is not intended to diagnose, treat, cure, or prevent any disease.",
     "sections": [
       {
@@ -218,15 +190,15 @@
         "links": [
           {
             "label": "Our Roots",
-            "href": "#about"
+            "href": "/about"
           },
           {
-            "label": "The Blog",
-            "href": "#blog"
+            "label": "The Wire",
+            "href": "/the-wire"
           },
           {
-            "label": "Products",
-            "href": "/products"
+            "label": "FAQ",
+            "href": "/faq"
           }
         ]
       },
